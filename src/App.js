@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="App">
       <section id="tittle-section">
-        <h1>
+        <h1 className="tittle">
           Hello <br /> World!
         </h1>
       </section>
