@@ -24,18 +24,19 @@
   right: 0;
   bottom: 0;
   color: white;
-  height: 30px;
+  height: 300px;
   width: 100px;
-  border-radius: 10px 0 10px 0;
+  border-radius: 0 10px 10px 0;
   cursor: pointer;
   transition: all 0.3s linear;
 }
 .info-card > button:hover {
   background: whitesmoke;
   color: #6200ff;
+  width: 110px;
 }
 
 .cardPhoto {
-  height: 301px;
+  height: 300px;
   width: 360px;
 }
