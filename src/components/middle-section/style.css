@@ -1,0 +1,21 @@
+#cards-section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  background: #010040;
+  align-items: center;
+}
+
+.info-card {
+  position: relative;
+  width: 75%;
+  height: 300px;
+  background: rgb(255, 255, 255);
+  margin: 40px;
+  border-radius: 10px;
+}
+.info-card > button {
+  position: absolute;
+  background: #6200ff;
+}
