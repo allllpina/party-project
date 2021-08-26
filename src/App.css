@@ -1,0 +1,25 @@
+#tittle-section {
+  height: 100vh;
+  width: 100%;
+  background: url(./img/wave-haikei.svg);
+  background-size: cover;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+#tittle-section > h1 {
+  margin: 0 0 0 20px;
+  font-size: 200px;
+  text-transform: uppercase;
+  color: azure;
+}
+
+#info-section {
+  height: 100vh;
+  width: 100%;
+  background: url(./img/wave-haikei-lower.svg);
+  background-size: cover;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
