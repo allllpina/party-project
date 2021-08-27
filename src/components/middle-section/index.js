@@ -8,23 +8,23 @@ export function MiddleSection() {
   Aos.init({ duration: 1500 });
   return (
     <section id="cards-section">
-      <div className="info-card" data-aos="flip-left">
-        <img src={photo1} alt="photo" className="cardPhoto"></img>
+      <div className="info-card" data-aos="fade-left">
+        <img src={photo1} alt="img" className="cardPhoto"></img>
         <h1>WEB Developers</h1>
         <button>More</button>
       </div>
       <div className="info-card" data-aos="fade-left">
-        <img src={photo1} alt="photo" className="cardPhoto"></img>
+        <img src={photo1} alt="img" className="cardPhoto"></img>
         <h1>WEB Developers</h1>
         <button>More</button>
       </div>
       <div className="info-card" data-aos="fade-left">
-        <img src={photo1} alt="photo" className="cardPhoto"></img>
+        <img src={photo1} alt="img" className="cardPhoto"></img>
         <h1>WEB Developers</h1>
         <button>More</button>
       </div>
       <div className="info-card" data-aos="fade-left">
-        <img src={photo1} alt="photo" className="cardPhoto"></img>
+        <img src={photo1} alt="img" className="cardPhoto"></img>
         <h1>WEB Developers</h1>
         <button>More</button>
       </div>
