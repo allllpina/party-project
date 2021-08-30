@@ -18,6 +18,7 @@ export function MiddleSection() {
 
   return (
     <section id="cards-section">
+<<<<<<< HEAD
       <div className="modal" style={{ left: `${left}%` }}>
         <div className="innerModal">
           <div className="modalInfo">
@@ -137,6 +138,28 @@ export function MiddleSection() {
           </p>
         </div>
         <button onClick={openModal}>More</button>
+=======
+      <div className="info-card" data-aos="fade-left">
+        <img src={photo1} alt="img" className="cardPhoto"></img>
+        <img src={photo1} alt="photo" className="cardPhoto"></img>
+        <h1>WEB Developers</h1>
+        <button>More</button>
+      </div>
+      <div className="info-card" data-aos="fade-left">
+        <img src={photo1} alt="img" className="cardPhoto"></img>
+        <h1>WEB Developers</h1>
+        <button>More</button>
+      </div>
+      <div className="info-card" data-aos="fade-left">
+        <img src={photo1} alt="img" className="cardPhoto"></img>
+        <h1>WEB Developers</h1>
+        <button>More</button>
+      </div>
+      <div className="info-card" data-aos="fade-left">
+        <img src={photo1} alt="img" className="cardPhoto"></img>
+        <h1>WEB Developers</h1>
+        <button>More</button>
+>>>>>>> 4e60e98029e9714587b2e52d77b2b3659ff3086c
       </div>
     </section>
   );
