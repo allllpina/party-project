@@ -4,6 +4,10 @@ import { MiddleSection } from "./components/middle-section";
 import { useState, useEffect } from "react";
 import { Preloader } from "./components/preloader";
 import { ThemeBtn } from "./components/theme-btn/theme-btn";
+import { Description } from "./components/description";
+// import { themes } from "./components/theme-btn/theme-btn";
+
+// const ThemeContext = React.createContext(themes.dark);
 
 function App() {
   const [globalDistplay, setGlobalDisplay] = useState("none");
@@ -36,6 +40,7 @@ function App() {
             Hello <br /> World!
           </h1>
         </section>
+        <Description />
         <MiddleSection />
         <section id="info-section"></section>
       </section>
