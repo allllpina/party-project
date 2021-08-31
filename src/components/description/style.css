@@ -9,9 +9,9 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: #010040;
   width: 100%;
   height: 100vh;
+  background: #010040;
 }
 
 .desc {
@@ -26,4 +26,35 @@
 
 .desc:hover {
   transform: scale(1.005);
+}
+
+#light-text {
+  color: black;
+}
+#dark-text {
+  color: azure;
+}
+
+#light {
+  background-color: #feffc1;
+  color: #fa7f67;
+}
+#dark {
+  background-color: #6200ff;
+  color: #010040;
+}
+
+.light-text {
+  color: black;
+}
+.dark-text {
+  color: azure;
+}
+.light {
+  background-color: #feffc1;
+  color: #fa7f67;
+}
+.dark {
+  background-color: #6200ff;
+  color: #010040;
 }

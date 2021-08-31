@@ -19,7 +19,7 @@ export function Description() {
   return (
     <section id="description" style={{ flexDirection: `${flexDir}` }}>
       <div className="desc" onClick={focus1}>
-        <p style={{ "font-size": `${size1}px` }}>
+        <p style={{ fontSize: `${size1}px` }}>
           Привет!!! И так, ты на нашем сайте – а значит на правильном пути. Пути
           поиска совершенных технологий и дизайна, эффективной работы и рекламы.
           Кто ты? Знаешь только ты, а кто мы? Это покажет и расскажет сайт, на
@@ -34,7 +34,7 @@ export function Description() {
         </p>
       </div>
       <div className="desc" onClick={focus2}>
-        <p style={{ "font-size": `${size2}px` }}>
+        <p style={{ fontSize: `${size2}px` }}>
           Hey!!! And so, you are on our site - which means you are on the right
           track. Ways to search for perfect technologies and design, effective
           work and advertising. Who are you? You only know who we are? This will
