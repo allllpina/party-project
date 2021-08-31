@@ -4,17 +4,20 @@ import "./style.css";
 export function Description() {
   const [size1, setSize1] = useState(25);
   const [size2, setSize2] = useState(15);
+  const [flexDir, setFlexDir] = useState("column");
   const focus1 = () => {
     setSize1(25);
     setSize2(15);
+    setFlexDir("column");
   };
   const focus2 = () => {
     setSize1(15);
     setSize2(25);
+    setFlexDir("column-reverse");
   };
 
   return (
-    <section id="description">
+    <section id="description" style={{ flexDirection: `${flexDir}` }}>
       <div className="desc" onClick={focus1}>
         <p style={{ "font-size": `${size1}px` }}>
           Привет!!! И так, ты на нашем сайте – а значит на правильном пути. Пути
