@@ -57,8 +57,13 @@ function App() {
             Hello <br /> World!
           </h1>
         </section>
-        <Description />
-        <MiddleSection />
+        <Description
+          className={darkMode ? "special-p-light" : "special-p-dark"}
+        />
+        <MiddleSection
+          className={darkMode ? "special-p-light" : "special-p-dark"}
+          id={darkMode ? "special-b-light" : "special-b-dark"}
+        />
         <section
           className={
             darkMode ? "light-background-bottom" : "dark-background-bottom"

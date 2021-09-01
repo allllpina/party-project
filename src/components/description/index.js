@@ -1,7 +1,7 @@
 import { React, useState } from "react";
 import "./style.css";
 
-export function Description() {
+export function Description(props) {
   const [size1, setSize1] = useState(25);
   const [size2, setSize2] = useState(15);
   const [flexDir, setFlexDir] = useState("column");
@@ -17,7 +17,11 @@ export function Description() {
   };
 
   return (
-    <section id="description" style={{ flexDirection: `${flexDir}` }}>
+    <section
+      className={props.className}
+      id="description"
+      style={{ flexDirection: `${flexDir}` }}
+    >
       <div className="desc" onClick={focus1}>
         <p style={{ fontSize: `${size1}px` }}>
           Привет!!! И так, ты на нашем сайте – а значит на правильном пути. Пути

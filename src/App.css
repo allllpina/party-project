@@ -225,3 +225,27 @@ input:checked + .slider:before {
   background-color: #feffc1;
   color: #fa7f67;
 }
+.special-p-dark {
+  background-color: #010040;
+  color: black;
+}
+.special-p-light {
+  background-color: #fa7f67;
+  color: black;
+}
+#special-b-light {
+  background-color: #feffc1;
+  color: black;
+}
+#special-b-dark {
+  background-color: #6200ff;
+  color: azure;
+}
+#special-b-light:hover {
+  background-color: whitesmoke;
+  color: #fa7f67;
+}
+#special-b-dark:hover {
+  background-color: whitesmoke;
+  color: #6200ff;
+}
