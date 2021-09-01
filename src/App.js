@@ -1,18 +1,15 @@
 import "./App.css";
-import React, { useContext } from "react";
+import React from "react";
 import { MiddleSection } from "./components/middle-section";
 import { useState, useEffect } from "react";
 import { Preloader } from "./components/preloader";
-import { ThemeBtn } from "./components/theme-btn/theme-btn";
 import { Description } from "./components/description";
-// import { themes } from "./components/theme-btn/theme-btn";
-
-// const ThemeContext = React.createContext(themes.dark);
 
 function App() {
-  // const theme = useContext(ThemeContext);
   const [globalDistplay, setGlobalDisplay] = useState("none");
   const [preloaderDistplay, setPreloaderDisplay] = useState("flex");
+  const [darkMode, setDarkMode] = useState(false);
+
   setTimeout(() => {
     setPreloaderDisplay("none");
     setGlobalDisplay("block");
@@ -25,30 +22,56 @@ function App() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
   return (
-    // <ThemeContext.Provider value={themes}>
-    <div className="App">
+    <div>
       <div className="container" style={{ display: `${preloaderDistplay}` }}>
         <Preloader />
       </div>
       <section id="global" style={{ display: `${globalDistplay}` }}>
-        <header id="main-header">
-          <ThemeBtn />
+        <header id="main-header" className={darkMode ? "light-header" : "dark"}>
+          <div className="wrapper">
+            <span id={darkMode ? "light-text" : "dark-text"}>☽</span>
+            <div className="switch-checkbox">
+              <label className="switch">
+                <input
+                  type="checkbox"
+                  onChange={() => setDarkMode(!darkMode)}
+                />
+                <span
+                  className="slider round"
+                  id={darkMode ? "special" : "dark-text"}
+                ></span>
+              </label>
+            </div>
+            <span id={darkMode ? "light-text" : "dark-text"}>☀︎</span>
+          </div>
         </header>
-        <section id="tittle-section">
+        <section
+          className={darkMode ? "light-background-top" : "dark-background-top"}
+          id="tittle-section"
+        >
           <h1
             className="tittle"
+            id={darkMode ? "light-text" : "dark-text"}
             style={{ transform: `translateX(${offsetY * 0.3}%)` }}
-            // style={{ color: theme.third }}
           >
             Hello <br /> World!
           </h1>
         </section>
-        <Description />
-        <MiddleSection />
-        <section id="info-section"></section>
+        <Description
+          className={darkMode ? "special-p-light" : "special-p-dark"}
+        />
+        <MiddleSection
+          className={darkMode ? "special-p-light" : "special-p-dark"}
+          id={darkMode ? "special-b-light" : "special-b-dark"}
+        />
+        <section
+          className={
+            darkMode ? "light-background-bottom" : "dark-background-bottom"
+          }
+          id="info-section"
+        ></section>
       </section>
     </div>
-    // </ThemeContext.Provider>
   );
 }
 
