@@ -72,6 +72,7 @@
   width: 100%;
   height: 100px;
   border-bottom: 1px solid azure;
+  background: transparent;
   position: absolute;
   display: flex;
   align-items: center;
@@ -183,12 +184,12 @@ input:checked + .slider:before {
 }
 
 #light {
-  background-color: #feffc1;
-  color: #fa7f67;
+  background-color: #ffdb6a;
+  color: #ea5f40;
 }
 #dark {
-  background-color: #6200ff;
-  color: #010040;
+  background-color: #141b29;
+  color: #984673;
 }
 
 .light-text {
@@ -198,54 +199,106 @@ input:checked + .slider:before {
   color: azure;
 }
 .light {
-  background-color: #feffc1;
-  color: #fa7f67;
+  background-color: #ffdb6a;
+  color: #ea5f40;
 }
 .dark {
-  background-color: #6200ff;
-  color: #010040;
+  background-color: #141b29;
+  color: #984673;
 }
 #special {
   background-color: black;
 }
 .light-background-top {
-  background: url(./img/Верхний\ светлый.png);
+  background: url(./img/Верхний\ светлый.svg);
 }
 .light-background-bottom {
-  background: url(./img/Нижний\ светлый.png);
+  background: url(./img/Нижний\ светлый.svg);
 }
 .dark-background-top {
-  background: url(./img/Верхний\ тёмный.png);
+  background: url(./img/Верхний\ тёмный.svg);
 }
 .dark-background-bottom {
-  background: url(./img/Нижний\ тёмный.png);
+  background: url(./img/Нижний\ тёмный.svg);
 }
 .light-header {
   border-bottom: 1px solid black !important;
-  background-color: #feffc1;
-  color: #fa7f67;
 }
 .special-p-dark {
-  background-color: #010040;
+  background-color: #141b29;
   color: black;
 }
 .special-p-light {
-  background-color: #fa7f67;
+  background-color: #ffdb6a;
   color: black;
 }
 #special-b-light {
-  background-color: #feffc1;
+  background-color: #ea5f40;
   color: black;
 }
 #special-b-dark {
-  background-color: #6200ff;
+  background-color: #984673;
   color: azure;
 }
 #special-b-light:hover {
   background-color: whitesmoke;
-  color: #fa7f67;
+  color: #ea5f40;
 }
 #special-b-dark:hover {
   background-color: whitesmoke;
-  color: #6200ff;
+  color: #141b29;
+}
+#special-btn-light {
+  border: 2px solid black;
+}
+#special-btn-dark {
+  border: 2px solid black;
+}
+
+@media screen and (max-width: 1024px) {
+  .tittle {
+    font-size: 140px;
+  }
+  .h1-dev {
+    font-size: 20px !important;
+  }
+  .cardPhoto {
+    width: 270px !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .tittle {
+    font-size: 120px;
+  }
+  .info-card {
+    flex-direction: column !important;
+  }
+  .cardPhoto {
+    height: 150px !important;
+    width: 100% !important;
+    border-radius: 0 10px 0 0;
+  }
+}
+
+@media screen and (max-width: 515px) {
+  .tittle {
+    margin-top: -50px;
+    font-size: 80px;
+  }
+  .cardPhoto {
+    height: 190px !important;
+  }
+  .info-card {
+    margin-top: 200px !important;
+  }
+  .h1-dev {
+    font-size: 17px !important;
+  }
+}
+@media screen and (max-width: 400px) {
+  .tittle {
+    font-size: 67px;
+    margin-top: -15px;
+  }
 }

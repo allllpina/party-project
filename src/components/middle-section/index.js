@@ -31,7 +31,7 @@ export function MiddleSection(props) {
       <div className="info-card" data-aos="fade-left">
         <img src={photo1} alt="code" className="cardPhoto"></img>
         <div className="info">
-          <h1>WEB Developers</h1>
+          <h1 className="h1-dev">WEB Developers</h1>
         </div>
         <button id={props.id} onClick={openModal}>
           More

@@ -59,6 +59,7 @@ function App() {
         </section>
         <Description
           className={darkMode ? "special-p-light" : "special-p-dark"}
+          id={darkMode ? "special-btn-light" : "special-btn-dark"}
         />
         <MiddleSection
           className={darkMode ? "special-p-light" : "special-p-dark"}

@@ -35,7 +35,6 @@ h1 {
   margin: 0;
   background: rgb(255, 255, 255);
   padding: 5px;
-  border: 2px solid #6200ff;
   cursor: pointer;
   transition: all 0.3s linear;
 }
@@ -52,6 +51,6 @@ h1 {
 }
 
 .actived {
-  background: #6200ff;
+  background-color: black;
   color: white;
 }

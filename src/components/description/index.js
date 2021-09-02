@@ -1,6 +1,5 @@
 import { React, useState } from "react";
 import "./style.css";
-import Aos from "aos";
 import "aos/dist/aos.css";
 
 export function Description(props) {
@@ -13,7 +12,7 @@ export function Description(props) {
     if (language1 === "none") {
       setLanguage1("block");
       setLanguage2("none");
-      setBtn1("button actived");
+      setBtn1(`button actived`);
       setBtn2("button ");
     } else {
       return;
@@ -24,7 +23,7 @@ export function Description(props) {
       setLanguage1("none");
       setLanguage2("block");
       setBtn1("button");
-      setBtn2("button actived");
+      setBtn2(`button actived`);
     } else {
       return;
     }
@@ -34,10 +33,10 @@ export function Description(props) {
     <section className={props.className} id="description">
       <div className="descriptionCase" data-aos="fade-left">
         <div className="buttonCase">
-          <button onClick={languageEng} className={btn1}>
+          <button id={props.id} onClick={languageEng} className={btn1}>
             English
           </button>
-          <button onClick={languageRus} className={btn2}>
+          <button id={props.id} onClick={languageRus} className={btn2}>
             Русский
           </button>
         </div>
