@@ -1,5 +1,7 @@
 import { React, useState } from "react";
 import "./style.css";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 export function Description(props) {
   const [language1, setLanguage1] = useState("block");
@@ -30,7 +32,7 @@ export function Description(props) {
 
   return (
     <section className={props.className} id="description">
-      <div className="descriptionCase">
+      <div className="descriptionCase" data-aos="fade-left">
         <div className="buttonCase">
           <button onClick={languageEng} className={btn1}>
             English
