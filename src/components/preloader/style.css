@@ -17,7 +17,7 @@
   left: 7.88px;
   border-radius: 50%;
   border: 23.64px solid #000;
-  border-color: #6200ff transparent #6200ff transparent;
+  border-color: #984673 transparent #984673 transparent;
   animation: ldio-4a81rd83h6u 0.970873786407767s linear infinite;
 }
 
@@ -30,7 +30,7 @@
   animation: ldio-4a81rd83h6u 0.970873786407767s linear infinite reverse;
 }
 .ldio-4a81rd83h6u > div:nth-child(2) {
-  border-color: transparent #010040 transparent #010040;
+  border-color: transparent #141b29 transparent #141b29;
 }
 .ldio-4a81rd83h6u > div:nth-child(3) {
   border-color: transparent;
@@ -50,14 +50,14 @@
   height: 23.64px;
   top: -23.64px;
   left: 55.16px;
-  background: #6200ff;
+  background: #984673;
   border-radius: 50%;
-  box-shadow: 0 157.6px 0 0 #6200ff;
+  box-shadow: 0 157.6px 0 0 #984673;
 }
 .ldio-4a81rd83h6u > div:nth-child(3) div:after {
   left: -23.64px;
   top: 55.16px;
-  box-shadow: 157.6px 0 0 0 #6200ff;
+  box-shadow: 157.6px 0 0 0 #984673;
 }
 
 .ldio-4a81rd83h6u > div:nth-child(4) {
@@ -78,14 +78,14 @@
   height: 23.64px;
   top: -23.64px;
   left: 29.55px;
-  background: #010040;
+  background: #141b29;
   border-radius: 50%;
-  box-shadow: 0 106.38px 0 0 #010040;
+  box-shadow: 0 106.38px 0 0 #141b29;
 }
 .ldio-4a81rd83h6u > div:nth-child(4) div:after {
   left: -23.64px;
   top: 29.55px;
-  box-shadow: 106.38px 0 0 0 #010040;
+  box-shadow: 106.38px 0 0 0 #141b29;
 }
 .loadingio-spinner-double-ring-rskbkg213z {
   width: 197px;
